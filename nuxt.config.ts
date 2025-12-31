@@ -8,7 +8,11 @@ export default defineNuxtConfig({
   app: {
     // GitHub Pages với subpath: /BCHQS_PhuXuan/
     baseURL: '/BCHQS_PhuXuan/',
-    buildAssetsDir: 'assets'
+    buildAssetsDir: 'assets',
+    cdnURL: '/BCHQS_PhuXuan/'
+  },
+  router: {
+    base: '/BCHQS_PhuXuan/'
   },
   nitro: {
     prerender: {
