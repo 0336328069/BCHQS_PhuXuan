@@ -14,6 +14,11 @@ export default defineNuxtConfig({
   router: {
     base: '/BCHQS_PhuXuan/'
   },
+  runtimeConfig: {
+    public: {
+      baseURL: '/BCHQS_PhuXuan/'
+    }
+  },
   nitro: {
     prerender: {
       routes: ['/']

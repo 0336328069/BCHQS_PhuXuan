@@ -501,36 +501,40 @@ const navItems = [
   { id: 'thong-tin-lien-quan', label: 'Thông tin liên quan' }
 ]
 
+// Lấy baseURL từ config
+const config = useRuntimeConfig()
+const baseURL = config.public.baseURL || '/BCHQS_PhuXuan/'
+
 // Banner Slider
 const currentSlide = ref(0)
 const bannerSlides = [
   {
-    image: '/images/banner/571221036_1874072556874755_3137352357692340646_n.jpg',
+    image: `${baseURL}images/banner/571221036_1874072556874755_3137352357692340646_n.jpg`,
     title: 'Hoạt động huấn luyện'
   },
   {
-    image: '/images/banner/571658877_1874072246874786_7108984142973128265_n.jpg',
+    image: `${baseURL}images/banner/571658877_1874072246874786_7108984142973128265_n.jpg`,
     title: 'Phòng chống thiên tai'
   },
   {
-    image: '/images/banner/582497471_4183398381900509_7588331551389692439_n.jpg',
+    image: `${baseURL}images/banner/582497471_4183398381900509_7588331551389692439_n.jpg`,
     title: 'Sẵn sàng chiến đấu'
   }
 ]
 
 // Hoạt động - Ảnh NVQS
 const nvqsImages = [
-  '/images/nvqs/nvqs1.jpg',
-  '/images/nvqs/nvqs2.jpg',
-  '/images/nvqs/nvqs3.jpg'
+  `${baseURL}images/nvqs/nvqs1.jpg`,
+  `${baseURL}images/nvqs/nvqs2.jpg`,
+  `${baseURL}images/nvqs/nvqs3.jpg`
 ]
 
 // Hoạt động - Ảnh Dân quân dọt lụt
 const lutImages = [
-  '/images/lut/lut1.jpg',
-  '/images/lut/lut2.jpg',
-  '/images/lut/lut3.jpg',
-  '/images/lut/lut4.jpg'
+  `${baseURL}images/lut/lut1.jpg`,
+  `${baseURL}images/lut/lut2.jpg`,
+  `${baseURL}images/lut/lut3.jpg`,
+  `${baseURL}images/lut/lut4.jpg`
 ]
 
 const selectedImage = ref<string | null>(null)
