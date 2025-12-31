@@ -6,9 +6,8 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   ssr: false, // Static site - không cần SSR
   app: {
-    // Nếu deploy GitHub Pages với repo name là BCHQS, đổi thành '/BCHQS/'
-    // Nếu deploy vào root domain (username.github.io), để '/'
-    baseURL: '/',
+    // GitHub Pages với subpath: /BCHQS_PhuXuan/
+    baseURL: '/BCHQS_PhuXuan/',
     buildAssetsDir: 'assets'
   },
   nitro: {
